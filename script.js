@@ -152,7 +152,25 @@ function calculate(get) {
 
             break;
 
-            // case 11: // alert(Math . max(getvalue.value, prompt('Enter a number', '0')) + 'Is Greter The number'); // break; // case 12: // alert(Math . min(getvalue.value, prompt('Enter a number', '0')) + 'Is less The number'); // break;
+             case 11: 
+        case 11:
+
+           const numToSeparate = oldHistory.innerHTML
+
+
+            const arrayOfDigits = numToSeparate.split(',');
+          const Max = Math.max(...arrayOfDigits);
+             output.innerHTML = Max;
+      
+            break; 
+            case 12: 
+      const numToSeparate = oldHistory.innerHTML
+
+
+            const arrayOfDigits = numToSeparate.split(',');
+          const Min = Math.min(...arrayOfDigits);// three dot is spread operator in js
+             output.innerHTML = Min;
+            break;
         case 13:
 
             var e = oldHistory.innerHTML;
