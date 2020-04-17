@@ -1,6 +1,6 @@
+
  var output = document.getElementById('output-value');
 var oldHistory = document.getElementById('history-value');
-
 
 function setValue(e) {
     if (oldHistory.innerHTML.split('').length < 16) {
@@ -13,7 +13,6 @@ function setValue(e) {
     }
 
 }
-
 
 
 function Clear() {
@@ -49,6 +48,8 @@ function process() {
 }
 
 function calculate(get) {
+
+
 
 
     switch (get) {
@@ -146,11 +147,38 @@ function calculate(get) {
 
             var random = oldHistory.innerHTML;
 
-            var Random = Math.random(Random);
+            var Random = Math.random(random);
 
             output.innerHTML = Random;
 
             break;
+
+            case 11:
+
+            var numToSeparate = oldHistory.innerHTML
+
+
+            var arrayOfDigits = numToSeparate.split(',');
+            
+            // console.log(typeof numToSeparate,numToSeparate)
+        
+            // console.log(arrayOfDigits)
+
+            // var max = oldHistory.innerHTML;
+
+            var Max = Math.max(...arrayOfDigits);
+             output.innerHTML = Max;
+            break;
+
+            case 12:
+            var numToSeparate = oldHistory.innerHTML; 
+            
+            var arrayOfDigits = numToSeparate.split(',');
+
+            var Min = Math.min(...arrayOfDigits);
+            output.innerHTML = Min;
+            break;
+
 
             // case 11: // alert(Math . max(getvalue.value, prompt('Enter a number', '0')) + 'Is Greter The number'); // break; // case 12: // alert(Math . min(getvalue.value, prompt('Enter a number', '0')) + 'Is less The number'); // break;
         case 13:

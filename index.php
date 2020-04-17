@@ -54,6 +54,8 @@
                     <input type="button" class="number" value="min" onclick="calculate(12)">
                     <input type="button" class="number" value="E" onclick="calculate(13)">
                     <input type="button" class="number" value="pi" onclick="calculate(14)">
+                    <button class="operator" style="margin-left: 120px; margin-top: -20px;" onclick="setValue(',')" id=",">,</button>
+                    <button class="operator" style="margin-left: 170px; margin-top: -65px;" onclick="setValue('.')" id=".">.</button>
                 </div>
             </div>
         </div>
