@@ -2,6 +2,8 @@
  var output = document.getElementById('output-value');
 var oldHistory = document.getElementById('history-value');
 
+
+
 function setValue(e) {
     if (oldHistory.innerHTML.split('').length < 16) {
         
@@ -157,10 +159,10 @@ function calculate(get) {
 
             var numToSeparate = oldHistory.innerHTML
 
-
+        
             var arrayOfDigits = numToSeparate.split(',');
             
-            // console.log(typeof numToSeparate,numToSeparate)
+            console.log(typeof numToSeparate,numToSeparate)
         
             // console.log(arrayOfDigits)
 
